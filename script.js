@@ -85,13 +85,15 @@ const handleSquareClick = (selectedName, square) => {
 
     else if (selectedName === '송나연') {
         description.textContent =
-            "소통";
+            "사회의 필수적 요소인 소통, 이 소통이 존재하지 않을 때 생기는 혼란, 예측할 수 없는 소통의 방향, 그리고 소통의 소거로 인한 관계의 무너짐을 표현";
 
-        const iframe = document.createElement('iframe');
-        iframe.src = 'https://editor.p5js.org/snyeon16/full/WVATtv9Zx';
-        iframe.src = 'https://editor.p5js.org/snyeon16/full/wfddWsnR4';
-        iframe.src = 'https://editor.p5js.org/snyeon16/full/ezn3mFv86';
-        rightContainer.appendChild(iframe);
+        const video = document.createElement('video');
+        video.src = 'na.mp4';
+        video.controls = true;
+        video.autoplay = true;
+        video.style.width = '100%';
+        video.style.height = '100%';
+        rightContainer.appendChild(video);
     } 
     
     else if (selectedName === '정은빈') {
