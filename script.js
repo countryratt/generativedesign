@@ -81,7 +81,7 @@ const handleSquareClick = (selectedName, square) => {
 
     else if (selectedName === '송나연') {
         description.textContent =
-            "..";
+            "소통";
 
         const iframe = document.createElement('iframe');
         iframe.src = 'https://editor.p5js.org/snyeon16/full/WVATtv9Zx';
