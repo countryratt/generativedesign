@@ -118,9 +118,13 @@ const handleSquareClick = (selectedName, square) => {
         description.textContent =
             "프로젝트의 주제인 비례와 강조에 맞춰 마우스 인터렉션에 따라 서로 다른 비례를 가진 이미지들이 조합되며 기존의 비례를 벗어나는 이미지를 생성하는 포스터";
 
-        const iframe = document.createElement('iframe');
-        iframe.src = 'https://editor.p5js.org/eeejee/full/KB5N7xZx1';
-        rightContainer.appendChild(iframe);
+        const video = document.createElement('video');
+        video.src = 's.mp4';
+        video.controls = true;
+        video.autoplay = true;
+        video.style.width = '100%';
+        video.style.height = '100%';
+        rightContainer.appendChild(video);
     }
     
     else if (selectedName === '정세아') {
