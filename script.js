@@ -65,9 +65,13 @@ const handleSquareClick = (selectedName, square) => {
         description.textContent =
             "가장 좋아하는 계절인 여름에 찍었던 사진들을 반짝이는 빛을 내며 마우스 인터렉티브로 지우며 볼 수 있는 아카이빙 사이트.";
 
-        const iframe = document.createElement('iframe');
-        iframe.src = 'https://editor.p5js.org/countryratt/full/dykxroHlT';
-        rightContainer.appendChild(iframe);
+        const video = document.createElement('video');
+        video.src = 'hj.mov';
+        video.controls = true;
+        video.autoplay = true;
+        video.style.width = '100%';
+        video.style.height = '100%';
+        rightContainer.appendChild(video);
     } 
     
     else if (selectedName === '김승주') {
